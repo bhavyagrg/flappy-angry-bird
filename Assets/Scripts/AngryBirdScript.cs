@@ -3,6 +3,8 @@ using UnityEngine;
 public class AngryBirdScript : MonoBehaviour
 {
     public Rigidbody2D myRigidBody;
+    public float flapStrength;
+    //public float flapStrength;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,7 +14,13 @@ public class AngryBirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myRigidBody.linearVelocity = Vector2.up * 3;
-        
+        //if (Input.GetKeyDown(KeyCode.Space) == true)
+        //{
+        //}
+        if(Input.GetKeyDown(KeyCode.Space) == true)
+        {
+           myRigidBody.linearVelocity = Vector2.up * flapStrength;
+        }
+
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 public class AngryBirdScript : MonoBehaviour
 {
     public Rigidbody2D myRigidBody;
-    public float flapStrength;
+    public float flapStrength = 10;
     //public float flapStrength;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
